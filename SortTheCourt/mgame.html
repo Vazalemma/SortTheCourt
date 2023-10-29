@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Sort The Court</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" type="image/png" href="img/icon.png">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/lists.js"></script>
+	<script>if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|MyLenovo|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+		window.location.href = "game.html";
+	}</script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div id="stats">
+				<img src="img/people.png" class="icon" id="people">
+				<div name="data" id="pplnum">20</div>
+				<img src="img/happiness.png" class="icon" id="happiness">
+				<div name="data" id="happynum">50</div>
+				<img src="img/money.png" class="icon" id="money">
+				<div name="data" id="moneynum">100</div>
+			</div>
+		</div>
+		<div class="row" id="recruits">
+			<div id="drags">
+				<img id="drag" name="drag" src="" style="display: none;">
+			</div>
+			<div id="dialogue"><div id="text"></div></div>
+		</div>
+		<div class="row">
+			<div id="drops">
+				<button id="invite" class="drop" onclick="invite()"></button>
+				<button id="decline" class="drop" onclick="decline()"></button>
+			</div>
+		</div>
+	</div>
+	<div id="distraction" style="display: none";></div>
+	<div id="popup" style="display: none";>
+		<div id="reqimg"><img id="requester" src=""></div>
+		<div id="request">
+			<div id="reqbody"></div>
+		</div>
+		<button class="reqbut" id="yes" onclick="yes()"></button>
+		<button class="reqbut" id="no" onclick="no()"></button>
+		<button class="reqbut" id="ok" onclick="ok()" style="display: none;"></button>
+	</div>
+	<script type="text/javascript" src="js/mscript.js"></script>
+</body>
+</html>
